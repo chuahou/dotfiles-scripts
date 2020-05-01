@@ -77,8 +77,10 @@ for DOTFILE in $DOTFILES; do
 
 	# check backup exists
 	if [ ! -e "$BACKUPPATH" ]; then
-		if [ -n "$ARGDELETE" ]; then # delete file without backup
-			rm $HOMEPATH
+		if [ -n "$ARGDELETE" ]; then # delete file without backup if is symlink
+			if [[ -L "$HOMEPATH" ]]; then
+				rm $HOMEPATH
+			fi
 		else
 			>&2 echo "$BACKUPPATH does not exist, not restoring $HOMEPATH"
 		fi
