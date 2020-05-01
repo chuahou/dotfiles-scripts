@@ -1,0 +1,8 @@
+.git/*
+.gitignore
+.dotfiles_backup/*
+.install_ignore
+extract.sh
+unlink.sh
+install.sh
+uninstall.sh
