@@ -52,3 +52,8 @@ To undo this, removing `./.config/dunst/dunstrc` and returning the original file
 to `~`, run
 
 	./unlink.sh -f .config/dunst/dunstrc
+
+## Development History
+
+Initial development was carried out at
+[chuahou/dotfiles](https://github.com/chuahou/dotfiles).
