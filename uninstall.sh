@@ -8,10 +8,10 @@ set -e
 
 print_usage ()
 {
-	echo "Usage: ./install.sh -o [HOME] -i [IGNORE] -b [BACKUP] -d"
-	echo "    [HOME]: base directory (usually ~) to install symlinks in"
+	echo "Usage: ./uninstall.sh -o [HOME] -i [IGNORE] -b [BACKUP]"
+	echo "    [HOME]: base directory (usually ~) to uninstall symlinks from"
 	echo "    [IGNORE]: file with paths to ignore"
-	echo "    [BACKUP]: directory to backup to"
+	echo "    [BACKUP]: directory to restore backups from"
 	echo "    -d: delete files without backups"
 }
 

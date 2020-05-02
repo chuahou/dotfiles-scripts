@@ -3,16 +3,14 @@
 # installs all current files in this directory to [HOME], ignoring paths matched
 # by paths listed in [IGNORE], and backup originals (if any) to [BACKUP]
 #
-# ./uninstall.sh -o(utput) [HOME] -i(gnore) [IGNORE] -b(ackup) [BACKUP]
-
-set -e
+# ./install.sh -o(utput) [HOME] -i(gnore) [IGNORE] -b(ackup) [BACKUP]
 
 print_usage ()
 {
-	echo "Usage: ./uninstall.sh -o [HOME] -i [IGNORE] -b [BACKUP]"
-	echo "    [HOME]: base directory (usually ~) to uninstall symlinks from"
+	echo "Usage: ./install.sh -o [HOME] -i [IGNORE] -b [BACKUP]"
+	echo "    [HOME]: base directory (usually ~) to install symlinks in"
 	echo "    [IGNORE]: file with paths to ignore"
-	echo "    [BACKUP]: directory to restore backups from"
+	echo "    [BACKUP]: directory to backup to"
 }
 
 # defaults
