@@ -81,6 +81,7 @@ for DOTFILE in $DOTFILES; do
 			if [ $(realpath $HOMEPATH) = "$DOTPATH" ]; then
 				# if is symlink to $DOTPATH
 				rm $HOMEPATH
+				echo "Deleted $HOMEPATH as there was no backup"
 			fi
 		else
 			>&2 echo "$BACKUPPATH does not exist, not restoring $HOMEPATH"
