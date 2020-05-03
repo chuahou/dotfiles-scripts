@@ -15,6 +15,12 @@ print_usage ()
 	echo "    -d: delete files without backups"
 }
 
+# ensure we are in script directory
+if [ ! -e $(basename $0) ]; then
+	>&2 echo "Run from script directory"
+	exit 1
+fi
+
 # defaults
 ARGHOME=$HOME
 ARGIGNORE=.install_ignore

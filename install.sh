@@ -5,6 +5,8 @@
 #
 # ./install.sh -o(utput) [HOME] -i(gnore) [IGNORE] -b(ackup) [BACKUP]
 
+set -e
+
 print_usage ()
 {
 	echo "Usage: ./install.sh -o [HOME] -i [IGNORE] -b [BACKUP]"
@@ -12,6 +14,12 @@ print_usage ()
 	echo "    [IGNORE]: file with paths to ignore"
 	echo "    [BACKUP]: directory to backup to"
 }
+
+# ensure we are in script directory
+if [ ! -e $(basename $0) ]; then
+	>&2 echo "Run from script directory"
+	exit 1
+fi
 
 # defaults
 ARGHOME=$HOME
