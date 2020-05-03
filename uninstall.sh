@@ -77,8 +77,9 @@ for DOTFILE in $DOTFILES; do
 
 	# check backup exists
 	if [ ! -e "$BACKUPPATH" ]; then
-		if [ -n "$ARGDELETE" ]; then # delete file without backup if is symlink
-			if [[ -L "$HOMEPATH" ]]; then
+		if [ -n "$ARGDELETE" ]; then # delete file without backup
+			if [ $(realpath $HOMEPATH) = "$DOTPATH" ]; then
+				# if is symlink to $DOTPATH
 				rm $HOMEPATH
 			fi
 		else
