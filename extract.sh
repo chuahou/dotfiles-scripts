@@ -16,7 +16,7 @@ print_usage ()
 
 # defaults
 ARGHOME=$HOME
-ARGDOTS=$HOME/.dotfiles
+ARGDOTS=$(dirname $0)
 
 # get options
 while getopts 'f:d:o:' OPTION; do
