@@ -83,7 +83,7 @@ if [ ! -e "$OUTFILE" ]; then
 	abort
 else # if exists, ensure it is linked to input file unless ARGNOLINK is set
 	if [ -z "$ARGNOLINK" ]; then
-		if [ $(realpath $OUTFILE) != "$INFILE" ]; then
+		if [ $(realpath $OUTFILE) != $(realpath $INFILE) ]; then
 			echo "$OUTFILE does not link to $INFILE, really unlink? (y to proceed, otherwise to cancel)"
 			abort
 		fi
