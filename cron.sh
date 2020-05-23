@@ -1,4 +1,5 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
 # Copyright (c) 2020 Chua Hou
 # Copies current crontab file to ./cron or vice versa.
 #

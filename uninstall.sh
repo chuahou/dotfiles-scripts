@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2020 Chua Hou
 #
 # undoes install.sh run with same arguments, -d to delete non backed up files
 #

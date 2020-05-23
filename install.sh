@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2020 Chua Hou
 #
 # installs all current files in this directory to [HOME], ignoring paths matched
 # by paths listed in [IGNORE], and backup originals (if any) to [BACKUP]

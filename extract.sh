@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2020 Chua Hou
 #
 # extracts an existing [FILE] relative to [HOME] to the [DOTFILES] directory
 #
