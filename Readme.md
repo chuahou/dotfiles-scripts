@@ -26,7 +26,8 @@ Ensure all dotfiles wanted are in this directory, then run
 
 	./install.sh
 
-from this directory.
+from this directory. If you want to run this again, make sure to move the old
+backup directory somewhere else.
 
 ### Restore original dotfiles
 
